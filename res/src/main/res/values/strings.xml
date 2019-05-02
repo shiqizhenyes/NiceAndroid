@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RES</string>
+    <string name="category">组件</string>
+    <string name="focus">干货</string>
+    <string name="learn">提升</string>
+    <string name="mine">我的</string>
+</resources>
