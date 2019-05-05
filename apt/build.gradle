@@ -3,7 +3,8 @@ apply plugin: 'java'
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':lib')
-    implementation project(path: ':aap')
+    compile 'com.squareup:javapoet:1.11.1'
+//    implementation project(path: ':aap')
 //    compile group: 'com.google.auto.service', name: 'auto-service-annotations', version: '1.0-rc5'
 
 }

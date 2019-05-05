@@ -1,1 +1,11 @@
-include ':app', ':ui', ':res', ':base', ':lib', ':apt', ':aap', ':category', ':mine'
+include ':app'
+include ':category'
+include ':mine'
+
+
+include ':ui'
+include ':res'
+include ':base'
+include ':lib'
+include ':apt'
+include ':aap'

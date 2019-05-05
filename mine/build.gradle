@@ -1,5 +1,5 @@
 
-if (IS_ALONG as boolean) {
+if (ALONG.toBoolean()) {
     apply plugin: 'com.android.application'
 }else {
     apply plugin: 'com.android.library'
@@ -28,7 +28,7 @@ android {
 
     sourceSets {
         main {
-            if (IS_ALONG) {
+            if (ALONG.toBoolean()) {
                 manifest.srcFile 'src/main/release/AndroidManifest.xml'
             }else {
                 manifest.srcFile 'src/main/AndroidManifest.xml'

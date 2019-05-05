@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 import me.nice.base.mvp.BaseMvpAppCompatActivity;
 
-public class WebViewActivity extends BaseMvpAppCompatActivity<WebViewPresenterImpl>
+public class WebViewActivity extends BaseMvpAppCompatActivity<Contract.WebViewPresenter, Contract.WebViewView>
         implements Contract.WebViewView, View.OnClickListener {
 
     private WebView wvWebView;

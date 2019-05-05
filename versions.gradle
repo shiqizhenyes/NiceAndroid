@@ -208,15 +208,7 @@ deps.super_textview = 'com.github.chenBingX:SuperTextView:3.1.5'
 deps.basepopup = "com.github.razerdp:BasePopup:2.1.9"
 ext.deps = deps
 
-//自定义类库
-//def ykt = [:]
-//ykt.usercenter = "com.ykt:usercenter:0.0.2"
-//ykt.icve = "com.ykt:app_icve:0.0.1"
-//ykt.zjy = "com.ykt:app_zjy:0.0.1"
-//ykt.mooc = "com.ykt:app_mooc:0.0.1"
-//ykt.baselib = "com.ykt:baselib:0.0.2"
-//ykt.widgetlib = "com.link:widgetlib:0.0.1"
-//deps.ykt = ykt
+
 
 
 

@@ -6,12 +6,7 @@
         android:theme="@style/AppLightTheme"
         android:label="@string/app_name">
 
-        <activity android:name=".WebViewActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <action android:name="android.intent.action.MAIN"/>
-            </intent-filter>
-        </activity>
+        <activity android:name=".WebViewActivity"/>
 
     </application>
 

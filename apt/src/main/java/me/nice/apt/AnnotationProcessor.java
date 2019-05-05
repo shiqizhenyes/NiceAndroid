@@ -11,12 +11,12 @@ import javax.annotation.processing.SupportedSourceVersion;
 import javax.lang.model.SourceVersion;
 import javax.lang.model.element.TypeElement;
 
+import me.nice.apt.processor.ApplicationProcessor;
 import me.nice.apt.processor.InstanceProcessor;
-import mobi.zack.aap.annotation.AutoProcessorFactory;
 
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
-@SupportedAnnotationTypes({"me.nice.annotation.apt.InstanceFactory"})
-@AutoProcessorFactory(AnnotationProcessor.class)
+@SupportedAnnotationTypes({"me.nice.annotation.apt.InstanceFactory","me.nice.annotation.apt.ApplicationConfig"})
+//@AutoProcessorFactory(AnnotationProcessor.class)
 public class AnnotationProcessor extends AbstractProcessor {
 
     private Filer filer;
@@ -29,6 +29,7 @@ public class AnnotationProcessor extends AbstractProcessor {
     public boolean process(Set<? extends TypeElement> annotations, RoundEnvironment roundEnv) {
         filer = processingEnv.getFiler();
         new InstanceProcessor().process(this, roundEnv);
+        new ApplicationProcessor().process(this, roundEnv);
         return true;
     }
 

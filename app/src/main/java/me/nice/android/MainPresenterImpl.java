@@ -2,6 +2,7 @@ package me.nice.android;
 
 import android.util.Log;
 
+import me.nice.annotation.apt.InstanceFactory;
 import me.nice.base.mvp.BasePresenterImpl;
 import me.nice.base.mvp.BaseView;
 

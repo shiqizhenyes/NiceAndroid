@@ -48,12 +48,12 @@ public class InstanceProcessor implements IProcessor {
         JavaFile javaFile = JavaFile.builder("com.apt",typeBuilder.build()).build();
         String path = "base/build/generated/source/apt";
         Path outPath = Paths.get(path);
-        try {
-            javaFile.writeTo(outPath);
+//        try {
+//            javaFile.writeTo(outPath);
 //            javaFile.writeTo(annotationProcessor.getFiler());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
     }
 
 
