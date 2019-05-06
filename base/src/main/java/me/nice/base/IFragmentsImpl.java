@@ -7,7 +7,7 @@ import me.nice.base.inter.IFragments;
 
 public class IFragmentsImpl<F extends BaseFragment> implements IFragments<BaseFragment> {
 
-    static IFragmentsImpl iFragments;
+    private static IFragmentsImpl iFragments;
 
     private F f;
 

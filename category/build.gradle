@@ -25,9 +25,9 @@ android {
     sourceSets {
         main {
             if (ALONG.toBoolean()) {
-                manifest.srcFile 'src/main/release/AndroidManifest.xml'
-            } else {
                 manifest.srcFile 'src/main/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/release/AndroidManifest.xml'
             }
         }
     }
@@ -41,5 +41,4 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation project(path: ':ui')
-//    annotationProcessor project(path: ':apt')
 }

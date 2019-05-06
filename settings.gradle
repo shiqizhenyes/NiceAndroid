@@ -2,7 +2,7 @@ include ':app'
 include ':category'
 include ':mine'
 
-
+include ':commons'
 include ':ui'
 include ':res'
 include ':base'

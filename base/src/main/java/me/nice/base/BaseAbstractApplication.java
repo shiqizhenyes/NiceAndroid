@@ -10,11 +10,15 @@ import java.util.Stack;
 
 public abstract class BaseAbstractApplication<F extends BaseFragment> extends Application implements Application.ActivityLifecycleCallbacks {
 
+
     private Stack<Activity> activities = new Stack<>();
+
 
     @Override
     public void onCreate() {
         super.onCreate();
+        initModelApplication(this);
+        initModelApplicationData(this);
     }
 
     @Override
@@ -52,6 +56,9 @@ public abstract class BaseAbstractApplication<F extends BaseFragment> extends Ap
         activities.remove(activity);
     }
 
+
     public abstract void initModelApplication(Application application);
+
+    public abstract void initModelApplicationData(Application application);
 
 }
